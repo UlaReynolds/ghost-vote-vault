@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
+/// @title GhostVote - DAO Privacy Voting System
+/// @author LaurelSally
+/// @notice This contract implements a fully encrypted voting system using FHEVM
+
 import {FHE, euint8, externalEuint8} from "@fhevm/solidity/lib/FHE.sol";
 import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
