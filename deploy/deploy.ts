@@ -1,3 +1,8 @@
+/**
+ * GhostVote Deployment Script
+ * @author LaurelSally
+ * Deploys the GhostVote contract to the configured network
+ */
 import { DeployFunction } from "hardhat-deploy/types";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 
