@@ -1,3 +1,7 @@
+/**
+ * Hardhat Task: Display Accounts
+ * @author LaurelSally
+ */
 import { task } from "hardhat/config";
 
 task("accounts", "Prints the list of accounts", async (_taskArgs, hre) => {
