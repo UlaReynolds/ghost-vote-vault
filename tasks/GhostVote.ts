@@ -1,3 +1,8 @@
+/**
+ * GhostVote Hardhat Tasks
+ * @author LaurelSally
+ * Custom tasks for contract deployment and interaction
+ */
 import { task } from "hardhat/config";
 import type { TaskArguments } from "hardhat/types";
 
