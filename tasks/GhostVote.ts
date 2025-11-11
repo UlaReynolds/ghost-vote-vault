@@ -18,7 +18,7 @@ task("task:deployGhostVote", "Deploy GhostVote contract").setAction(async functi
     log: true,
   });
 
-  console.log(`GhostVote contract deployed at: ${ghostVote.address}`);
+  console.log(`✅ GhostVote contract deployed at: ${ghostVote.address}`);
 });
 
 task("task:getProposal", "Get proposal details")
