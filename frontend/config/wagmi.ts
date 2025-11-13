@@ -3,7 +3,14 @@ import { http } from "wagmi";
 import { hardhat, sepolia } from "wagmi/chains";
 
 // WalletConnect Project ID
-export const walletProjectId = "ef3325a718834a2b1b4134d3f520933d";
+const walletProjectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID;
+
+if (!walletProjectId) {
+  throw new Error(
+    "Missing NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID environment variable.",
+  );
+}
+export { walletProjectId };
 
 // Infura API Key
 const INFURA_API_KEY = process.env.NEXT_PUBLIC_INFURA_API_KEY || "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz";

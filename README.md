@@ -96,7 +96,7 @@ const votesAgainst = Number(values[1]);
 
 ### Frontend
 - Next.js 15 with App Router
-- Rainbow wallet integration (WalletConnect Project ID: ef3325a718834a2b1b4134d3f520933d)
+- Rainbow wallet integration (WalletConnect Project ID configured via environment variable)
 - FHEVM SDK for encryption/decryption
 - Real-time proposal updates
 - Infura RPC integration
@@ -199,6 +199,13 @@ Frontend will start at `http://localhost:3000`
 npx hardhat vars set MNEMONIC "your twelve word mnemonic here"
 npx hardhat vars set INFURA_API_KEY "your_infura_api_key"
 npx hardhat vars set ETHERSCAN_API_KEY "your_etherscan_api_key"
+```
+
+For the frontend, create a `frontend/.env.local` file (do not commit it) with:
+
+```bash
+NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_walletconnect_project_id
+NEXT_PUBLIC_INFURA_API_KEY=your_infura_api_key
 ```
 
 Or use private key:
